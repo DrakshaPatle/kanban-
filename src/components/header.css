@@ -1,431 +1,4 @@
-/* /* body { 
-     CSS Variables that may have been missed get put on body *
-        --color-customization-background-deprecated-opaque:  #c7c4c4;  
-        --color-customization-aqua-background:  #9ee7e3;  
-        --color-text:  #f5f4f3;  
-        --color-text-weak:  #a2a0a2;  
-        --color-text-weak-hover:  #f5f4f3;  
-        --color-icon:  #a2a0a2;  
-        --color-border:  #424244;  
-        --color-background-weak:  #1e1f21;  
-        --color-background-hover:  rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:  #fff;  
-        --color-primary-icon-strong:  #fff;  
-        --color-primary-background-strong:  #4573d2;  
-        --color-primary-background-strong-hover:  #426dc6;  
-        --color-customization-background-deprecated-opaque:   #c7c4c4;  
-        --color-customization-aqua-background:   #9ee7e3;  
-        --color-text:  #f5f4f3;  
-        --color-text-weak:  #a2a0a2;  
-        --color-text-weak-hover:  #f5f4f3;  
-        --color-icon:  #a2a0a2;  
-        --color-border:  #424244;  
-        --color-background-weak:  #1e1f21;  
-        --color-background-hover:  rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:  #fff;  
-        --color-primary-icon-strong:  #fff;  
-        --color-primary-background-strong:  #4573d2;  
-        --color-primary-background-strong-hover:  #426dc6;  
-        --color-customization-background-deprecated-opaque:    #c7c4c4;  
-        --color-customization-aqua-background:    #9ee7e3;  
-        --color-text:   #f5f4f3;  
-        --color-text-weak:   #a2a0a2;  
-        --color-text-weak-hover:   #f5f4f3;  
-        --color-icon:   #a2a0a2;  
-        --color-border:   #424244;  
-        --color-background-weak:   #1e1f21;  
-        --color-background-hover:   rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:   #fff;  
-        --color-primary-icon-strong:   #fff;  
-        --color-primary-background-strong:   #4573d2;  
-        --color-primary-background-strong-hover:   #426dc6;  
-        --color-navigation-topbar-background:  #363639;  
-        --color-navigation-border:  #424244;  
-        --color-navigation-body-background:  #252628;  
-        --color-customization-background-deprecated-opaque:     #c7c4c4;  
-        --color-customization-aqua-background:     #9ee7e3;  
-        --color-text:    #f5f4f3;  
-        --color-text-weak:    #a2a0a2;  
-        --color-text-weak-hover:    #f5f4f3;  
-        --color-icon:    #a2a0a2;  
-        --color-border:    #424244;  
-        --color-background-weak:    #1e1f21;  
-        --color-background-hover:    rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:    #fff;  
-        --color-primary-icon-strong:    #fff;  
-        --color-primary-background-strong:    #4573d2;  
-        --color-primary-background-strong-hover:    #426dc6;  
-        --color-navigation-topbar-background:  #363639;  
-        --color-navigation-border:  #424244;  
-        --color-navigation-body-background:  #252628;  
-        --color-button-icon-secondary-hover:  #f5f4f3;  
-        --color-button-border-secondary:  #565557;  
-        --color-button-border-secondary-hover:  #6a696a;  
-        --color-button-border-subtle:  transparent;  
-        --color-button-background-secondary:  transparent;  
-        --color-button-background-secondary-hover:  rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:  transparent;  
-        --color-customization-background-deprecated-opaque:      #c7c4c4;  
-        --color-customization-aqua-background:      #9ee7e3;  
-        --color-text:     #f5f4f3;  
-        --color-text-weak:     #a2a0a2;  
-        --color-text-weak-hover:     #f5f4f3;  
-        --color-icon:     #a2a0a2;  
-        --color-border:     #424244;  
-        --color-background-weak:     #1e1f21;  
-        --color-background-hover:     rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:     #fff;  
-        --color-primary-icon-strong:     #fff;  
-        --color-primary-background-strong:     #4573d2;  
-        --color-primary-background-strong-hover:     #426dc6;  
-        --color-navigation-topbar-background:   #363639;  
-        --color-navigation-border:   #424244;  
-        --color-navigation-body-background:   #252628;  
-        --color-button-icon-secondary-hover:  #f5f4f3;  
-        --color-button-border-secondary:  #565557;  
-        --color-button-border-secondary-hover:  #6a696a;  
-        --color-button-border-subtle:  transparent;  
-        --color-button-background-secondary:  transparent;  
-        --color-button-background-secondary-hover:  rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:  transparent;  
-        --color-customization-background-deprecated-opaque:       #c7c4c4;  
-        --color-customization-aqua-background:       #9ee7e3;  
-        --color-text:      #f5f4f3;  
-        --color-text-weak:      #a2a0a2;  
-        --color-text-weak-hover:      #f5f4f3;  
-        --color-icon:      #a2a0a2;  
-        --color-border:      #424244;  
-        --color-background-weak:      #1e1f21;  
-        --color-background-hover:      rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:      #fff;  
-        --color-primary-icon-strong:      #fff;  
-        --color-primary-background-strong:      #4573d2;  
-        --color-primary-background-strong-hover:      #426dc6;  
-        --color-navigation-topbar-background:    #363639;  
-        --color-navigation-border:    #424244;  
-        --color-navigation-body-background:    #252628;  
-        --color-button-icon-secondary-hover:   #f5f4f3;  
-        --color-button-border-secondary:   #565557;  
-        --color-button-border-secondary-hover:   #6a696a;  
-        --color-button-border-subtle:   transparent;  
-        --color-button-background-secondary:   transparent;  
-        --color-button-background-secondary-hover:   rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:   transparent;  
-        --color-customization-background-deprecated-opaque:        #c7c4c4;  
-        --color-customization-aqua-background:        #9ee7e3;  
-        --color-text:       #f5f4f3;  
-        --color-text-weak:       #a2a0a2;  
-        --color-text-weak-hover:       #f5f4f3;  
-        --color-icon:       #a2a0a2;  
-        --color-border:       #424244;  
-        --color-background-weak:       #1e1f21;  
-        --color-background-hover:       rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:       #fff;  
-        --color-primary-icon-strong:       #fff;  
-        --color-primary-background-strong:       #4573d2;  
-        --color-primary-background-strong-hover:       #426dc6;  
-        --color-navigation-topbar-background:     #363639;  
-        --color-navigation-border:     #424244;  
-        --color-navigation-body-background:     #252628;  
-        --color-button-icon-secondary-hover:    #f5f4f3;  
-        --color-button-border-secondary:    #565557;  
-        --color-button-border-secondary-hover:    #6a696a;  
-        --color-button-border-subtle:    transparent;  
-        --color-button-background-secondary:    transparent;  
-        --color-button-background-secondary-hover:    rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:    transparent;  
-        --color-box-shadow-bottom-small:  0 1px #424244;  
-        --color-customization-background-deprecated-opaque:         #c7c4c4;  
-        --color-customization-aqua-background:         #9ee7e3;  
-        --color-text:        #f5f4f3;  
-        --color-text-weak:        #a2a0a2;  
-        --color-text-weak-hover:        #f5f4f3;  
-        --color-icon:        #a2a0a2;  
-        --color-border:        #424244;  
-        --color-background-weak:        #1e1f21;  
-        --color-background-hover:        rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:        #fff;  
-        --color-primary-icon-strong:        #fff;  
-        --color-primary-background-strong:        #4573d2;  
-        --color-primary-background-strong-hover:        #426dc6;  
-        --color-navigation-topbar-background:      #363639;  
-        --color-navigation-border:      #424244;  
-        --color-navigation-body-background:      #252628;  
-        --color-button-icon-secondary-hover:     #f5f4f3;  
-        --color-button-border-secondary:     #565557;  
-        --color-button-border-secondary-hover:     #6a696a;  
-        --color-button-border-subtle:     transparent;  
-        --color-button-background-secondary:     transparent;  
-        --color-button-background-secondary-hover:     rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:     transparent;  
-        --color-box-shadow-bottom-small:  0 1px #424244;  
-        --color-customization-background-deprecated-opaque:          #c7c4c4;  
-        --color-customization-aqua-background:          #9ee7e3;  
-        --color-text:         #f5f4f3;  
-        --color-text-weak:         #a2a0a2;  
-        --color-text-weak-hover:         #f5f4f3;  
-        --color-icon:         #a2a0a2;  
-        --color-border:         #424244;  
-        --color-background-weak:         #1e1f21;  
-        --color-background-hover:         rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:         #fff;  
-        --color-primary-icon-strong:         #fff;  
-        --color-primary-background-strong:         #4573d2;  
-        --color-primary-background-strong-hover:         #426dc6;  
-        --color-navigation-topbar-background:       #363639;  
-        --color-navigation-border:       #424244;  
-        --color-navigation-body-background:       #252628;  
-        --color-button-icon-secondary-hover:      #f5f4f3;  
-        --color-button-border-secondary:      #565557;  
-        --color-button-border-secondary-hover:      #6a696a;  
-        --color-button-border-subtle:      transparent;  
-        --color-button-background-secondary:      transparent;  
-        --color-button-background-secondary-hover:      rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:      transparent;  
-        --color-box-shadow-bottom-small:   0 1px #424244;  
-        --color-customization-background-deprecated-opaque:           #c7c4c4;  
-        --color-customization-aqua-background:           #9ee7e3;  
-        --color-text:          #f5f4f3;  
-        --color-text-weak:          #a2a0a2;  
-        --color-text-weak-hover:          #f5f4f3;  
-        --color-icon:          #a2a0a2;  
-        --color-border:          #424244;  
-        --color-background-weak:          #1e1f21;  
-        --color-background-hover:          rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:          #fff;  
-        --color-primary-icon-strong:          #fff;  
-        --color-primary-background-strong:          #4573d2;  
-        --color-primary-background-strong-hover:          #426dc6;  
-        --color-navigation-topbar-background:        #363639;  
-        --color-navigation-border:        #424244;  
-        --color-navigation-body-background:        #252628;  
-        --color-button-icon-secondary-hover:       #f5f4f3;  
-        --color-button-border-secondary:       #565557;  
-        --color-button-border-secondary-hover:       #6a696a;  
-        --color-button-border-subtle:       transparent;  
-        --color-button-background-secondary:       transparent;  
-        --color-button-background-secondary-hover:       rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:       transparent;  
-        --color-box-shadow-bottom-small:    0 1px #424244;  
-        --color-customization-background-deprecated-opaque:            #c7c4c4;  
-        --color-customization-aqua-background:            #9ee7e3;  
-        --color-text:           #f5f4f3;  
-        --color-text-weak:           #a2a0a2;  
-        --color-text-weak-hover:           #f5f4f3;  
-        --color-icon:           #a2a0a2;  
-        --color-border:           #424244;  
-        --color-background-weak:           #1e1f21;  
-        --color-background-hover:           rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:           #fff;  
-        --color-primary-icon-strong:           #fff;  
-        --color-primary-background-strong:           #4573d2;  
-        --color-primary-background-strong-hover:           #426dc6;  
-        --color-navigation-topbar-background:         #363639;  
-        --color-navigation-border:         #424244;  
-        --color-navigation-body-background:         #252628;  
-        --color-button-icon-secondary-hover:        #f5f4f3;  
-        --color-button-border-secondary:        #565557;  
-        --color-button-border-secondary-hover:        #6a696a;  
-        --color-button-border-subtle:        transparent;  
-        --color-button-background-secondary:        transparent;  
-        --color-button-background-secondary-hover:        rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:        transparent;  
-        --color-box-shadow-bottom-small:     0 1px #424244;  
-        --color-customization-background-deprecated-opaque:             #c7c4c4;  
-        --color-customization-aqua-background:             #9ee7e3;  
-        --color-text:            #f5f4f3;  
-        --color-text-weak:            #a2a0a2;  
-        --color-text-weak-hover:            #f5f4f3;  
-        --color-icon:            #a2a0a2;  
-        --color-border:            #424244;  
-        --color-background-weak:            #1e1f21;  
-        --color-background-hover:            rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:            #fff;  
-        --color-primary-icon-strong:            #fff;  
-        --color-primary-background-strong:            #4573d2;  
-        --color-primary-background-strong-hover:            #426dc6;  
-        --color-navigation-topbar-background:          #363639;  
-        --color-navigation-border:          #424244;  
-        --color-navigation-body-background:          #252628;  
-        --color-button-icon-secondary-hover:         #f5f4f3;  
-        --color-button-border-secondary:         #565557;  
-        --color-button-border-secondary-hover:         #6a696a;  
-        --color-button-border-subtle:         transparent;  
-        --color-button-background-secondary:         transparent;  
-        --color-button-background-secondary-hover:         rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:         transparent;  
-        --color-box-shadow-bottom-small:      0 1px #424244;  
-        --color-customization-background-deprecated-opaque:              #c7c4c4;  
-        --color-customization-aqua-background:              #9ee7e3;  
-        --color-text:             #f5f4f3;  
-        --color-text-weak:             #a2a0a2;  
-        --color-text-weak-hover:             #f5f4f3;  
-        --color-icon:             #a2a0a2;  
-        --color-border:             #424244;  
-        --color-background-weak:             #1e1f21;  
-        --color-background-hover:             rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:             #fff;  
-        --color-primary-icon-strong:             #fff;  
-        --color-primary-background-strong:             #4573d2;  
-        --color-primary-background-strong-hover:             #426dc6;  
-        --color-navigation-topbar-background:           #363639;  
-        --color-navigation-border:           #424244;  
-        --color-navigation-body-background:           #252628;  
-        --color-button-icon-secondary-hover:          #f5f4f3;  
-        --color-button-border-secondary:          #565557;  
-        --color-button-border-secondary-hover:          #6a696a;  
-        --color-button-border-subtle:          transparent;  
-        --color-button-background-secondary:          transparent;  
-        --color-button-background-secondary-hover:          rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:          transparent;  
-        --color-box-shadow-bottom-small:       0 1px #424244;  
-        --color-customization-background-deprecated-opaque:               #c7c4c4;  
-        --color-customization-aqua-background:               #9ee7e3;  
-        --color-text:              #f5f4f3;  
-        --color-text-weak:              #a2a0a2;  
-        --color-text-weak-hover:              #f5f4f3;  
-        --color-icon:              #a2a0a2;  
-        --color-border:              #424244;  
-        --color-background-weak:              #1e1f21;  
-        --color-background-hover:              rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:              #fff;  
-        --color-primary-icon-strong:              #fff;  
-        --color-primary-background-strong:              #4573d2;  
-        --color-primary-background-strong-hover:              #426dc6;  
-        --color-navigation-topbar-background:            #363639;  
-        --color-navigation-border:            #424244;  
-        --color-navigation-body-background:            #252628;  
-        --color-button-icon-secondary-hover:           #f5f4f3;  
-        --color-button-border-secondary:           #565557;  
-        --color-button-border-secondary-hover:           #6a696a;  
-        --color-button-border-subtle:           transparent;  
-        --color-button-background-secondary:           transparent;  
-        --color-button-background-secondary-hover:           rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:           transparent;  
-        --color-box-shadow-bottom-small:        0 1px #424244;  
-        --color-customization-background-deprecated-opaque:                #c7c4c4;  
-        --color-customization-aqua-background:                #9ee7e3;  
-        --color-text:               #f5f4f3;  
-        --color-text-weak:               #a2a0a2;  
-        --color-text-weak-hover:               #f5f4f3;  
-        --color-icon:               #a2a0a2;  
-        --color-border:               #424244;  
-        --color-background-weak:               #1e1f21;  
-        --color-background-hover:               rgba(255, 255, 255, 0.06);  
-        --color-primary-text-strong:               #fff;  
-        --color-primary-icon-strong:               #fff;  
-        --color-primary-background-strong:               #4573d2;  
-        --color-primary-background-strong-hover:               #426dc6;  
-        --color-navigation-topbar-background:             #363639;  
-        --color-navigation-border:             #424244;  
-        --color-navigation-body-background:             #252628;  
-        --color-button-icon-secondary-hover:            #f5f4f3;  
-        --color-button-border-secondary:            #565557;  
-        --color-button-border-secondary-hover:            #6a696a;  
-        --color-button-border-subtle:            transparent;  
-        --color-button-background-secondary:            transparent;  
-        --color-button-background-secondary-hover:            rgba(255, 255, 255, 0.06);  
-        --color-button-background-subtle:            transparent;  
-        --color-box-shadow-bottom-small:         0 1px #424244;  
-    } 
-    
-    .AppRoot-fullPage { 
-        bottom: 0; 
-        display: flex; 
-        flex-direction: column; 
-        left: 0; 
-        overflow: hidden; 
-        position: absolute; 
-        right: 0; 
-        top: 0;
-    } 
-    
-    body { 
-        border:     0; 
-        font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-        font-size:  14px; 
-        margin:   0;
-        padding:     0; 
-        vertical-align:     baseline;
-        line-height:  normal;
-        background-color:   var(--color-navigation-body-background); 
-        box-sizing:   border-box; 
-        color:   var(--color-text); 
-        fill:   var(--color-icon); 
-        overflow:   hidden;
-    } 
-    
-    @media (prefers-color-scheme: dark){ 
-      .DesignTokenThemeSelectors-theme--systemDarkMode { 
-        color-scheme: dark;
-      } 
-    
-      :root .DesignTokenThemeSelectors-theme--systemDarkMode { 
-        --color-customization-background-deprecated-opaque:               #c7c4c4; 
-        --color-customization-aqua-background:               #9ee7e3; 
-        --color-text:              #f5f4f3; 
-        --color-text-weak:              #a2a0a2; 
-        --color-text-weak-hover:              #f5f4f3; 
-        --color-icon:              #a2a0a2; 
-        --color-border:              #424244; 
-        --color-background-weak:              #1e1f21; 
-        --color-background-hover:              rgba(255, 255, 255, 0.06); 
-        --color-primary-text-strong:              #fff; 
-        --color-primary-icon-strong:              #fff; 
-        --color-primary-background-strong:              #4573d2; 
-        --color-primary-background-strong-hover:              #426dc6; 
-        --color-navigation-topbar-background:            #363639; 
-        --color-navigation-border:            #424244; 
-        --color-navigation-body-background:            #252628; 
-        --color-button-icon-secondary-hover:           #f5f4f3; 
-        --color-button-border-secondary:           #565557; 
-        --color-button-border-secondary-hover:           #6a696a; 
-        --color-button-border-subtle:           transparent; 
-        --color-button-background-secondary:           transparent; 
-        --color-button-background-secondary-hover:           rgba(255, 255, 255, 0.06); 
-        --color-button-background-subtle:           transparent; 
-        --color-box-shadow-bottom-small:        0 1px #424244; 
-      } 
-    }     
-    
-    html { 
-        border:   0; 
-        font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-        font-size:  14px; 
-        margin:   0; 
-        padding:   0; 
-        vertical-align:   baseline;
-        height:  100%;
-        line-height: normal;
-    } 
-    
-    :root { 
-        --color-customization-background-deprecated-opaque:                #c7c4c4; 
-        --color-customization-aqua-background:                #9ee7e3; 
-        --color-text:               #1e1f21; 
-        --color-text-weak:               #6d6e6f; 
-        --color-text-weak-hover:               #1e1f21; 
-        --color-icon:               #6d6e6f; 
-        --color-border:               #edeae9; 
-        --color-background-weak:               #fff; 
-        --color-background-hover:               rgba(55, 23, 23, 0.03); 
-        --color-primary-text-strong:               #fff; 
-        --color-primary-icon-strong:               #fff; 
-        --color-primary-background-strong:               #4573d2; 
-        --color-primary-background-strong-hover:               #426dc6; 
-        --color-navigation-topbar-background:             #252628; 
-        --color-navigation-border:             #424244; 
-        --color-navigation-body-background:             #f9f8f8; 
-        --color-button-icon-secondary-hover:            #1e1f21; 
-        --color-button-border-secondary:            #cfcbcb; 
-        --color-button-border-secondary-hover:            #afabac; 
-        --color-button-border-subtle:            transparent; 
-        --color-button-background-secondary:            #fff; 
-        --color-button-background-secondary-hover:            #f9f8f8; 
-        --color-button-background-subtle:            transparent; 
-        --color-box-shadow-bottom-small:         0 1px 4px 0 rgba(109, 110, 111, 0.08); 
-    }  */
-    
+ 
     .GlobalTopbarStructure { 
         align-items: center; 
         -webkit-app-region: drag; 
@@ -465,13 +38,13 @@
         display: flex;
     } 
     
-    .TopbarPageHeaderStructureWithBreadcrumbs-titleRow { 
+    .Topbar-titleRow { 
         align-items: center; 
         display: flex; 
         max-width: 100%;
     } 
     
-    .TopbarPageHeaderStructureWithBreadcrumbs-titleAndBreadcrumbs { 
+    .Topbar-titleAndBreadcrumbs { 
         align-items: flex-start; 
         box-sizing: border-box; 
         display: flex; 
@@ -481,53 +54,29 @@
         justify-content: center;
     } 
     
-    .TopbarPageHeaderStructureWithBreadcrumbs-topSection { 
+    .Topbar-topSection { 
         display: flex; 
         flex: 1 1 auto; 
         height: 72px; 
         min-width: 1px;
     } 
     
-    .TopbarPageHeaderStructureWithBreadcrumbs-leftChildrenWrapper { 
+    .Topbar-leftChildrenWrapper { 
         flex: 1 1 auto; 
         min-width: 1px;
     } 
     
-    .TopbarPageHeaderStructureWithBreadcrumbs { 
+    .Topbar { 
         display: flex; 
         flex: 1 1 auto; 
         min-width: 1px;
     } 
     
-    .TopbarPageHeaderStructureWithBreadcrumbs--withNavMenu { 
+    .Topbar--withNavMenu { 
         height: 98.8px;
     } 
     
-    .AsanaBaseTopbar-pageHeader { 
-        display: inline-flex; 
-        flex: 1 1 auto; 
-        min-width: 1px;
-    } 
-    
-    .AsanaBaseTopbar--zIndexIncluded { 
-        z-index: 200;
-    } 
-    
-    .AsanaBaseTopbar { 
-        align-items: center; 
-        background: var(--color-background-weak); 
-        box-shadow: var(--color-box-shadow-bottom-small); 
-        box-sizing: border-box; 
-        display: flex; 
-        flex-shrink: 0; 
-        min-height: 72px; 
-        padding: 0 24px; 
-        position: relative;
-    } 
-    
-    .AsanaBaseTopbar--withoutShadow { 
-        box-shadow: none;
-    } 
+   
     
     main { 
         display: block;
@@ -557,7 +106,7 @@
         flex-direction: column;
     } 
     
-    .ThemeableIconButtonPresentation { 
+    .btn { 
         align-items: center; 
         border: 1px solid; 
         border-radius: 50%; 
@@ -568,34 +117,24 @@
         transition-property: background,border,fill;
     } 
     
-    .ThemeableIconButtonPresentation.ThemeableIconButtonPresentation--isEnabled { 
+    .btn.btn--isEnabled { 
         cursor: pointer;
     } 
     
-    .SubtleIconButton.ThemeableIconButtonPresentation { 
+    .SubtleIconButton.btn { 
         border-radius: 6px;
     } 
     
-    .ThemeableIconButtonPresentation.ThemeableIconButtonPresentation--medium.ThemeableIconButtonPresentation { 
+    .btn.btn--medium.btn { 
         height: 28px; 
         min-height: 28px; 
         min-width: 28px; 
         width: 28px;
     } 
     
-    .SubtleIconButton.SubtleIconButton--standardTheme.ThemeableIconButtonPresentation { 
-        background: var(--color-button-background-subtle); 
-        border-color: var(--color-button-background-subtle); 
-        fill: var(--color-text-weak);
-    } 
+
     
-    .SubtleIconButton.SubtleIconButton--standardTheme.ThemeableIconButtonPresentation--isEnabled:hover { 
-        background: var(--color-background-hover); 
-        border-color: var(--color-button-border-subtle); 
-        fill: var(--color-text-weak-hover);
-    } 
-    
-    .TopbarPageHeaderStructureWithBreadcrumbs-icons { 
+    .Topbar-icons { 
         align-items: center; 
         display: flex;
     } 
@@ -607,23 +146,12 @@
         margin-right: 12px;
     } 
     
-    .SubtleFavoriteStarButton.ThemeableIconButtonPresentation { 
+    .SubtleFavoriteStarButton.btn { 
         border-radius: 6px;
     } 
     
-    .SubtleFavoriteStarButton--favorited.SubtleFavoriteStarButton--colorAqua.ThemeableIconButtonPresentation { 
-        background: var(--color-button-background-subtle); 
-        border-color: var(--color-button-background-subtle); 
-        fill: var(--color-customization-aqua-background);
-    } 
-    
-    .SubtleFavoriteStarButton--favorited.SubtleFavoriteStarButton--colorAqua.ThemeableIconButtonPresentation--isEnabled:hover { 
-        background: var(--color-background-hover); 
-        border-color: var(--color-button-border-subtle); 
-        fill: var(--color-customization-aqua-background);
-    } 
-    
-    .TopbarPageHeaderStructureWithBreadcrumbs-titleRightElement { 
+   
+    .Topbar-titleRightElement { 
         flex: 1 0 auto; 
         margin-left: 8px;
     } 
@@ -714,293 +242,6 @@
 
 
 
-
-    body { 
-        /* CSS Variables that may have been missed get put on body */ 
-            --color-customization-aqua-text-deprecated:  #f5f4f3;  
-            --color-text:  #f5f4f3;  
-            --color-text-weak:  #a2a0a2;  
-            --color-text-weak-hover:  #f5f4f3;  
-            --color-icon:  #a2a0a2;  
-            --color-border-active:  #a2a0a2;  
-            --color-background-weak:  #1e1f21;  
-            --color-customization-aqua-text-deprecated:   #f5f4f3;  
-            --color-text:  #f5f4f3;  
-            --color-text-weak:  #a2a0a2;  
-            --color-text-weak-hover:  #f5f4f3;  
-            --color-icon:  #a2a0a2;  
-            --color-border-active:  #a2a0a2;  
-            --color-background-weak:  #1e1f21;  
-            --color-customization-aqua-text-deprecated:    #f5f4f3;  
-            --color-text:   #f5f4f3;  
-            --color-text-weak:   #a2a0a2;  
-            --color-text-weak-hover:   #f5f4f3;  
-            --color-icon:   #a2a0a2;  
-            --color-border-active:   #a2a0a2;  
-            --color-background-weak:   #1e1f21;  
-            --color-navigation-body-background:  #252628;  
-            --color-customization-aqua-text-deprecated:     #f5f4f3;  
-            --color-text:    #f5f4f3;  
-            --color-text-weak:    #a2a0a2;  
-            --color-text-weak-hover:    #f5f4f3;  
-            --color-icon:    #a2a0a2;  
-            --color-border-active:    #a2a0a2;  
-            --color-background-weak:    #1e1f21;  
-            --color-navigation-body-background:  #252628;  
-            --color-customization-aqua-text-deprecated:      #f5f4f3;  
-            --color-text:     #f5f4f3;  
-            --color-text-weak:     #a2a0a2;  
-            --color-text-weak-hover:     #f5f4f3;  
-            --color-icon:     #a2a0a2;  
-            --color-border-active:     #a2a0a2;  
-            --color-background-weak:     #1e1f21;  
-            --color-navigation-body-background:   #252628;  
-            --color-customization-aqua-text-deprecated:       #f5f4f3;  
-            --color-text:      #f5f4f3;  
-            --color-text-weak:      #a2a0a2;  
-            --color-text-weak-hover:      #f5f4f3;  
-            --color-icon:      #a2a0a2;  
-            --color-border-active:      #a2a0a2;  
-            --color-background-weak:      #1e1f21;  
-            --color-navigation-body-background:    #252628;  
-            --color-customization-aqua-text-deprecated:        #f5f4f3;  
-            --color-text:       #f5f4f3;  
-            --color-text-weak:       #a2a0a2;  
-            --color-text-weak-hover:       #f5f4f3;  
-            --color-icon:       #a2a0a2;  
-            --color-border-active:       #a2a0a2;  
-            --color-background-weak:       #1e1f21;  
-            --color-navigation-body-background:     #252628;  
-            --color-box-shadow-bottom-small:  0 1px #424244;  
-            --color-customization-aqua-text-deprecated:         #f5f4f3;  
-            --color-text:        #f5f4f3;  
-            --color-text-weak:        #a2a0a2;  
-            --color-text-weak-hover:        #f5f4f3;  
-            --color-icon:        #a2a0a2;  
-            --color-border-active:        #a2a0a2;  
-            --color-background-weak:        #1e1f21;  
-            --color-navigation-body-background:      #252628;  
-            --color-box-shadow-bottom-small:  0 1px #424244;  
-            --color-customization-aqua-text-deprecated:          #f5f4f3;  
-            --color-text:         #f5f4f3;  
-            --color-text-weak:         #a2a0a2;  
-            --color-text-weak-hover:         #f5f4f3;  
-            --color-icon:         #a2a0a2;  
-            --color-border-active:         #a2a0a2;  
-            --color-background-weak:         #1e1f21;  
-            --color-navigation-body-background:       #252628;  
-            --color-box-shadow-bottom-small:   0 1px #424244;  
-            --color-customization-aqua-text-deprecated:           #f5f4f3;  
-            --color-text:          #f5f4f3;  
-            --color-text-weak:          #a2a0a2;  
-            --color-text-weak-hover:          #f5f4f3;  
-            --color-icon:          #a2a0a2;  
-            --color-border-active:          #a2a0a2;  
-            --color-background-weak:          #1e1f21;  
-            --color-navigation-body-background:        #252628;  
-            --color-box-shadow-bottom-small:    0 1px #424244;  
-            --color-customization-aqua-text-deprecated:            #f5f4f3;  
-            --color-text:           #f5f4f3;  
-            --color-text-weak:           #a2a0a2;  
-            --color-text-weak-hover:           #f5f4f3;  
-            --color-icon:           #a2a0a2;  
-            --color-border-active:           #a2a0a2;  
-            --color-background-weak:           #1e1f21;  
-            --color-navigation-body-background:         #252628;  
-            --color-box-shadow-bottom-small:     0 1px #424244;  
-            --color-customization-aqua-text-deprecated:             #f5f4f3;  
-            --color-text:            #f5f4f3;  
-            --color-text-weak:            #a2a0a2;  
-            --color-text-weak-hover:            #f5f4f3;  
-            --color-icon:            #a2a0a2;  
-            --color-border-active:            #a2a0a2;  
-            --color-background-weak:            #1e1f21;  
-            --color-navigation-body-background:          #252628;  
-            --color-box-shadow-bottom-small:      0 1px #424244;  
-            --color-customization-aqua-text-deprecated:              #f5f4f3;  
-            --color-text:             #f5f4f3;  
-            --color-text-weak:             #a2a0a2;  
-            --color-text-weak-hover:             #f5f4f3;  
-            --color-icon:             #a2a0a2;  
-            --color-border-active:             #a2a0a2;  
-            --color-background-weak:             #1e1f21;  
-            --color-navigation-body-background:           #252628;  
-            --color-box-shadow-bottom-small:       0 1px #424244;  
-            --color-customization-aqua-text-deprecated:               #f5f4f3;  
-            --color-text:              #f5f4f3;  
-            --color-text-weak:              #a2a0a2;  
-            --color-text-weak-hover:              #f5f4f3;  
-            --color-icon:              #a2a0a2;  
-            --color-border-active:              #a2a0a2;  
-            --color-background-weak:              #1e1f21;  
-            --color-navigation-body-background:            #252628;  
-            --color-box-shadow-bottom-small:        0 1px #424244;  
-            --color-customization-aqua-text-deprecated:                #f5f4f3;  
-            --color-text:               #f5f4f3;  
-            --color-text-weak:               #a2a0a2;  
-            --color-text-weak-hover:               #f5f4f3;  
-            --color-icon:               #a2a0a2;  
-            --color-border-active:               #a2a0a2;  
-            --color-background-weak:               #1e1f21;  
-            --color-navigation-body-background:             #252628;  
-            --color-box-shadow-bottom-small:         0 1px #424244;  
-        } 
-        
-        .NavBarWithOverflow { 
-            min-width: 1px; 
-            position: relative; 
-            white-space: nowrap;
-        } 
-        
-        .PotNavigationBar { 
-            flex: 1;
-        } 
-        
-        .TopbarPageHeaderStructureWithBreadcrumbs-navMenuRow { 
-            align-items: flex-end; 
-            align-self: stretch; 
-            display: flex; 
-            flex: 1 0 auto; 
-            justify-content: flex-start; 
-            max-width: 100%;
-        } 
-        
-        .TopbarPageHeaderStructureWithBreadcrumbs-leftChildrenWrapper { 
-            flex: 1 1 auto; 
-            min-width: 1px;
-        } 
-        
-        .TopbarPageHeaderStructureWithBreadcrumbs { 
-            display: flex; 
-            flex: 1 1 auto; 
-            min-width: 1px;
-        } 
-        
-        .TopbarPageHeaderStructureWithBreadcrumbs--withNavMenu { 
-            height: 98.8px;
-        } 
-        
-        .AsanaBaseTopbar-pageHeader { 
-            display: inline-flex; 
-            flex: 1 1 auto; 
-            min-width: 1px;
-        } 
-        
-        .AsanaBaseTopbar--zIndexIncluded { 
-            z-index: 200;
-        } 
-        
-        .AsanaBaseTopbar { 
-            align-items: center; 
-            background: var(--color-background-weak); 
-            box-shadow: var(--color-box-shadow-bottom-small); 
-            box-sizing: border-box; 
-            display: flex; 
-            flex-shrink: 0; 
-            min-height: 72px; 
-            padding: 0 24px; 
-            position: relative;
-        } 
-        
-        .AsanaBaseTopbar--withoutShadow { 
-            box-shadow: none;
-        } 
-        
-        main { 
-            display: block;
-        } 
-        
-        .AsanaMain-asanaPageAndTopbar { 
-            display: flex; 
-            flex: 1; 
-            flex-direction: column; 
-            min-width: 920px; 
-            position: relative;
-        } 
-        
-        .AsanaMain-mainLayer { 
-            display: flex; 
-            flex: 1 1 0; 
-            min-height: 1px;
-        } 
-        
-        .AsanaMain { 
-            display: flex; 
-            flex: 1 1 auto; 
-            flex-direction: column;
-        } 
-        
-        .AppRoot-fullPage { 
-            bottom: 0; 
-            display: flex; 
-            flex-direction: column; 
-            left: 0; 
-            overflow: hidden; 
-            position: absolute; 
-            right: 0; 
-            top: 0;
-        } 
-        
-        [tabindex="-1"]:focus { 
-            outline: none;
-        } 
-        
-        body { 
-            border:     0; 
-            font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-            font-size:  14px; 
-            margin:   0;
-            padding:     0; 
-            vertical-align:     baseline;
-            line-height:  normal;
-            background-color:   var(--color-navigation-body-background); 
-            box-sizing:   border-box; 
-            color:   var(--color-text); 
-            fill:   var(--color-icon); 
-            overflow:   hidden;
-        } 
-        
-        @media (prefers-color-scheme: dark){ 
-          .DesignTokenThemeSelectors-theme--systemDarkMode { 
-            color-scheme: dark;
-          } 
-        
-          :root .DesignTokenThemeSelectors-theme--systemDarkMode { 
-            --color-customization-aqua-text-deprecated:               #f5f4f3; 
-            --color-text:              #f5f4f3; 
-            --color-text-weak:              #a2a0a2; 
-            --color-text-weak-hover:              #f5f4f3; 
-            --color-icon:              #a2a0a2; 
-            --color-border-active:              #a2a0a2; 
-            --color-background-weak:              #1e1f21; 
-            --color-navigation-body-background:            #252628; 
-            --color-box-shadow-bottom-small:        0 1px #424244; 
-          } 
-        }     
-        
-        html { 
-            border:   0; 
-            font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-            font-size:  14px; 
-            margin:   0; 
-            padding:   0; 
-            vertical-align:   baseline;
-            height:  100%;
-            line-height: normal;
-        } 
-        
-        :root { 
-            --color-customization-aqua-text-deprecated:                #1e1f21; 
-            --color-text:               #1e1f21; 
-            --color-text-weak:               #6d6e6f; 
-            --color-text-weak-hover:               #1e1f21; 
-            --color-icon:               #6d6e6f; 
-            --color-border-active:               #6d6e6f; 
-            --color-background-weak:               #fff; 
-            --color-navigation-body-background:             #f9f8f8; 
-            --color-box-shadow-bottom-small:         0 1px 4px 0 rgba(109, 110, 111, 0.08); 
-        } 
-        
         nav { 
             display: block;
             border:  0; 
@@ -1008,7 +249,7 @@
             font-size:  100%; 
             margin:  0; 
             padding:  0; 
-            vertical-align:  baseline;
+            
         } 
         
         .NavBar { 
@@ -1121,381 +362,6 @@
         } 
         
         
-        /* addtask */
-
-        body { 
-            /* CSS Variables that may have been missed get put on body */ 
-                --color-text:  #f5f4f3;  
-                --color-text-weak:  #a2a0a2;  
-                --color-text-weak-hover:  #f5f4f3;  
-                --color-icon:  #a2a0a2;  
-                --color-border:  #424244;  
-                --color-border-strong:  #565557;  
-                --color-background-weak:  #1e1f21;  
-                --color-background-medium:  #252628;  
-                --color-text:  #f5f4f3;  
-                --color-text-weak:  #a2a0a2;  
-                --color-text-weak-hover:  #f5f4f3;  
-                --color-icon:  #a2a0a2;  
-                --color-border:  #424244;  
-                --color-border-strong:  #565557;  
-                --color-background-weak:  #1e1f21;  
-                --color-background-medium:  #252628;  
-                --color-text:   #f5f4f3;  
-                --color-text-weak:   #a2a0a2;  
-                --color-text-weak-hover:   #f5f4f3;  
-                --color-icon:   #a2a0a2;  
-                --color-border:   #424244;  
-                --color-border-strong:   #565557;  
-                --color-background-weak:   #1e1f21;  
-                --color-background-medium:   #252628;  
-                --color-navigation-body-background:  #252628;  
-                --color-text:    #f5f4f3;  
-                --color-text-weak:    #a2a0a2;  
-                --color-text-weak-hover:    #f5f4f3;  
-                --color-icon:    #a2a0a2;  
-                --color-border:    #424244;  
-                --color-border-strong:    #565557;  
-                --color-background-weak:    #1e1f21;  
-                --color-background-medium:    #252628;  
-                --color-navigation-body-background:  #252628;  
-                --color-button-icon-secondary-hover:  #f5f4f3;  
-                --color-button-border-secondary:  #565557;  
-                --color-button-border-secondary-hover:  #6a696a;  
-                --color-button-background-secondary:  transparent;  
-                --color-button-background-secondary-hover:  rgba(255, 255, 255, 0.06);  
-                --color-text:     #f5f4f3;  
-                --color-text-weak:     #a2a0a2;  
-                --color-text-weak-hover:     #f5f4f3;  
-                --color-icon:     #a2a0a2;  
-                --color-border:     #424244;  
-                --color-border-strong:     #565557;  
-                --color-background-weak:     #1e1f21;  
-                --color-background-medium:     #252628;  
-                --color-navigation-body-background:   #252628;  
-                --color-button-icon-secondary-hover:  #f5f4f3;  
-                --color-button-border-secondary:  #565557;  
-                --color-button-border-secondary-hover:  #6a696a;  
-                --color-button-background-secondary:  transparent;  
-                --color-button-background-secondary-hover:  rgba(255, 255, 255, 0.06);  
-                --color-text:      #f5f4f3;  
-                --color-text-weak:      #a2a0a2;  
-                --color-text-weak-hover:      #f5f4f3;  
-                --color-icon:      #a2a0a2;  
-                --color-border:      #424244;  
-                --color-border-strong:      #565557;  
-                --color-background-weak:      #1e1f21;  
-                --color-background-medium:      #252628;  
-                --color-navigation-body-background:    #252628;  
-                --color-button-icon-secondary-hover:   #f5f4f3;  
-                --color-button-border-secondary:   #565557;  
-                --color-button-border-secondary-hover:   #6a696a;  
-                --color-button-background-secondary:   transparent;  
-                --color-button-background-secondary-hover:   rgba(255, 255, 255, 0.06);  
-                --color-text:       #f5f4f3;  
-                --color-text-weak:       #a2a0a2;  
-                --color-text-weak-hover:       #f5f4f3;  
-                --color-icon:       #a2a0a2;  
-                --color-border:       #424244;  
-                --color-border-strong:       #565557;  
-                --color-background-weak:       #1e1f21;  
-                --color-background-medium:       #252628;  
-                --color-navigation-body-background:     #252628;  
-                --color-button-icon-secondary-hover:    #f5f4f3;  
-                --color-button-border-secondary:    #565557;  
-                --color-button-border-secondary-hover:    #6a696a;  
-                --color-button-background-secondary:    transparent;  
-                --color-button-background-secondary-hover:    rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:  0 1px #424244;  
-                --color-text:        #f5f4f3;  
-                --color-text-weak:        #a2a0a2;  
-                --color-text-weak-hover:        #f5f4f3;  
-                --color-icon:        #a2a0a2;  
-                --color-border:        #424244;  
-                --color-border-strong:        #565557;  
-                --color-background-weak:        #1e1f21;  
-                --color-background-medium:        #252628;  
-                --color-navigation-body-background:      #252628;  
-                --color-button-icon-secondary-hover:     #f5f4f3;  
-                --color-button-border-secondary:     #565557;  
-                --color-button-border-secondary-hover:     #6a696a;  
-                --color-button-background-secondary:     transparent;  
-                --color-button-background-secondary-hover:     rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:  0 1px #424244;  
-                --color-text:         #f5f4f3;  
-                --color-text-weak:         #a2a0a2;  
-                --color-text-weak-hover:         #f5f4f3;  
-                --color-icon:         #a2a0a2;  
-                --color-border:         #424244;  
-                --color-border-strong:         #565557;  
-                --color-background-weak:         #1e1f21;  
-                --color-background-medium:         #252628;  
-                --color-navigation-body-background:       #252628;  
-                --color-button-icon-secondary-hover:      #f5f4f3;  
-                --color-button-border-secondary:      #565557;  
-                --color-button-border-secondary-hover:      #6a696a;  
-                --color-button-background-secondary:      transparent;  
-                --color-button-background-secondary-hover:      rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:   0 1px #424244;  
-                --color-text:          #f5f4f3;  
-                --color-text-weak:          #a2a0a2;  
-                --color-text-weak-hover:          #f5f4f3;  
-                --color-icon:          #a2a0a2;  
-                --color-border:          #424244;  
-                --color-border-strong:          #565557;  
-                --color-background-weak:          #1e1f21;  
-                --color-background-medium:          #252628;  
-                --color-navigation-body-background:        #252628;  
-                --color-button-icon-secondary-hover:       #f5f4f3;  
-                --color-button-border-secondary:       #565557;  
-                --color-button-border-secondary-hover:       #6a696a;  
-                --color-button-background-secondary:       transparent;  
-                --color-button-background-secondary-hover:       rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:    0 1px #424244;  
-                --color-text:           #f5f4f3;  
-                --color-text-weak:           #a2a0a2;  
-                --color-text-weak-hover:           #f5f4f3;  
-                --color-icon:           #a2a0a2;  
-                --color-border:           #424244;  
-                --color-border-strong:           #565557;  
-                --color-background-weak:           #1e1f21;  
-                --color-background-medium:           #252628;  
-                --color-navigation-body-background:         #252628;  
-                --color-button-icon-secondary-hover:        #f5f4f3;  
-                --color-button-border-secondary:        #565557;  
-                --color-button-border-secondary-hover:        #6a696a;  
-                --color-button-background-secondary:        transparent;  
-                --color-button-background-secondary-hover:        rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:     0 1px #424244;  
-                --color-text:            #f5f4f3;  
-                --color-text-weak:            #a2a0a2;  
-                --color-text-weak-hover:            #f5f4f3;  
-                --color-icon:            #a2a0a2;  
-                --color-border:            #424244;  
-                --color-border-strong:            #565557;  
-                --color-background-weak:            #1e1f21;  
-                --color-background-medium:            #252628;  
-                --color-navigation-body-background:          #252628;  
-                --color-button-icon-secondary-hover:         #f5f4f3;  
-                --color-button-border-secondary:         #565557;  
-                --color-button-border-secondary-hover:         #6a696a;  
-                --color-button-background-secondary:         transparent;  
-                --color-button-background-secondary-hover:         rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:      0 1px #424244;  
-                --color-text:             #f5f4f3;  
-                --color-text-weak:             #a2a0a2;  
-                --color-text-weak-hover:             #f5f4f3;  
-                --color-icon:             #a2a0a2;  
-                --color-border:             #424244;  
-                --color-border-strong:             #565557;  
-                --color-background-weak:             #1e1f21;  
-                --color-background-medium:             #252628;  
-                --color-navigation-body-background:           #252628;  
-                --color-button-icon-secondary-hover:          #f5f4f3;  
-                --color-button-border-secondary:          #565557;  
-                --color-button-border-secondary-hover:          #6a696a;  
-                --color-button-background-secondary:          transparent;  
-                --color-button-background-secondary-hover:          rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:       0 1px #424244;  
-                --color-text:              #f5f4f3;  
-                --color-text-weak:              #a2a0a2;  
-                --color-text-weak-hover:              #f5f4f3;  
-                --color-icon:              #a2a0a2;  
-                --color-border:              #424244;  
-                --color-border-strong:              #565557;  
-                --color-background-weak:              #1e1f21;  
-                --color-background-medium:              #252628;  
-                --color-navigation-body-background:            #252628;  
-                --color-button-icon-secondary-hover:           #f5f4f3;  
-                --color-button-border-secondary:           #565557;  
-                --color-button-border-secondary-hover:           #6a696a;  
-                --color-button-background-secondary:           transparent;  
-                --color-button-background-secondary-hover:           rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:        0 1px #424244;  
-                --color-text:               #f5f4f3;  
-                --color-text-weak:               #a2a0a2;  
-                --color-text-weak-hover:               #f5f4f3;  
-                --color-icon:               #a2a0a2;  
-                --color-border:               #424244;  
-                --color-border-strong:               #565557;  
-                --color-background-weak:               #1e1f21;  
-                --color-background-medium:               #252628;  
-                --color-navigation-body-background:             #252628;  
-                --color-button-icon-secondary-hover:            #f5f4f3;  
-                --color-button-border-secondary:            #565557;  
-                --color-button-border-secondary-hover:            #6a696a;  
-                --color-button-background-secondary:            transparent;  
-                --color-button-background-secondary-hover:            rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:         0 1px #424244;  
-            } 
-            
-            .TabNavigationBarWithOverflow { 
-                min-width: 1px; 
-                position: relative; 
-                white-space: nowrap;
-            } 
-            
-            .PotNavigationBar { 
-                flex: 1;
-            } 
-            
-            .TopbarPageHeaderStructureWithBreadcrumbs-navMenuRow { 
-                align-items: flex-end; 
-                align-self: stretch; 
-                display: flex; 
-                flex: 1 0 auto; 
-                justify-content: flex-start; 
-                max-width: 100%;
-            } 
-            
-            .TopbarPageHeaderStructureWithBreadcrumbs-leftChildrenWrapper { 
-                flex: 1 1 auto; 
-                min-width: 1px;
-            } 
-            
-            .TopbarPageHeaderStructureWithBreadcrumbs { 
-                display: flex; 
-                flex: 1 1 auto; 
-                min-width: 1px;
-            } 
-            
-            .TopbarPageHeaderStructureWithBreadcrumbs--withNavMenu { 
-                height: 98.8px;
-            } 
-            
-            .AsanaBaseTopbar-pageHeader { 
-                display: inline-flex; 
-                flex: 1 1 auto; 
-                min-width: 1px;
-            } 
-            
-            .AsanaBaseTopbar--zIndexIncluded { 
-                z-index: 200;
-            } 
-            
-            .AsanaBaseTopbar { 
-                align-items: center; 
-                background: var(--color-background-weak); 
-                box-shadow: var(--color-box-shadow-bottom-small); 
-                box-sizing: border-box; 
-                display: flex; 
-                flex-shrink: 0; 
-                min-height: 72px; 
-                padding: 0 24px; 
-                position: relative;
-            } 
-            
-            .AsanaBaseTopbar--withoutShadow { 
-                box-shadow: none;
-            } 
-            
-            main { 
-                display: block;
-            } 
-            
-            .AsanaMain-asanaPageAndTopbar { 
-                display: flex; 
-                flex: 1; 
-                flex-direction: column; 
-                min-width: 920px; 
-                position: relative;
-            } 
-            
-            [tabindex="-1"]:focus { 
-                outline: none;
-            } 
-            
-            .AsanaMain-mainLayer { 
-                display: flex; 
-                flex: 1 1 0; 
-                min-height: 1px;
-            } 
-            
-            .AsanaMain { 
-                display: flex; 
-                flex: 1 1 auto; 
-                flex-direction: column;
-            } 
-            
-            .AppRoot-fullPage { 
-                bottom: 0; 
-                display: flex; 
-                flex-direction: column; 
-                left: 0; 
-                overflow: hidden; 
-                position: absolute; 
-                right: 0; 
-                top: 0;
-            } 
-            
-            body { 
-                border:     0; 
-                font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-                font-size:  14px; 
-                margin:   0;
-                padding:     0; 
-                vertical-align:     baseline;
-                line-height:  normal;
-                background-color:   var(--color-navigation-body-background); 
-                box-sizing:   border-box; 
-                color:   var(--color-text); 
-                fill:   var(--color-icon); 
-                overflow:   hidden;
-            } 
-            
-            @media (prefers-color-scheme: dark){ 
-              .DesignTokenThemeSelectors-theme--systemDarkMode { 
-                color-scheme: dark;
-              } 
-            
-              :root .DesignTokenThemeSelectors-theme--systemDarkMode { 
-                --color-text:              #f5f4f3; 
-                --color-text-weak:              #a2a0a2; 
-                --color-text-weak-hover:              #f5f4f3; 
-                --color-icon:              #a2a0a2; 
-                --color-border:              #424244; 
-                --color-border-strong:              #565557; 
-                --color-background-weak:              #1e1f21; 
-                --color-background-medium:              #252628; 
-                --color-navigation-body-background:            #252628; 
-                --color-button-icon-secondary-hover:           #f5f4f3; 
-                --color-button-border-secondary:           #565557; 
-                --color-button-border-secondary-hover:           #6a696a; 
-                --color-button-background-secondary:           transparent; 
-                --color-button-background-secondary-hover:           rgba(255, 255, 255, 0.06); 
-                --color-box-shadow-bottom-small:        0 1px #424244; 
-              } 
-            }     
-            
-            html { 
-                border:   0; 
-                font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-                font-size:  14px; 
-                margin:   0; 
-                padding:   0; 
-                vertical-align:   baseline;
-                height:  100%;
-                line-height: normal;
-            } 
-            
-            :root { 
-                --color-text:               #1e1f21; 
-                --color-text-weak:               #6d6e6f; 
-                --color-text-weak-hover:               #1e1f21; 
-                --color-icon:               #6d6e6f; 
-                --color-border:               #edeae9; 
-                --color-border-strong:               #cfcbcb; 
-                --color-background-weak:               #fff; 
-                --color-background-medium:               #f9f8f8; 
-                --color-navigation-body-background:             #f9f8f8; 
-                --color-button-icon-secondary-hover:            #1e1f21; 
-                --color-button-border-secondary:            #cfcbcb; 
-                --color-button-border-secondary-hover:            #afabac; 
-                --color-button-background-secondary:            #fff; 
-                --color-button-background-secondary-hover:            #f9f8f8; 
-                --color-box-shadow-bottom-small:         0 1px 4px 0 rgba(109, 110, 111, 0.08); 
-            } 
-            
             nav { 
                 display: block;
                 border:  0; 
@@ -1503,7 +369,7 @@
                 font-size:  100%; 
                 margin:  0; 
                 padding:  0; 
-                vertical-align:  baseline;
+               
             } 
             
             .TabNavigationBar { 
@@ -1689,12 +555,7 @@
                 padding: 0 8px;
             } 
             
-            .SecondarySplitDropdownMenuButton-rightButton.Thirdnav { 
-                background: var(--color-button-background-secondary); 
-                border-color: var(--color-button-border-secondary); 
-                color: var(--color-text); 
-                fill: var(--color-icon);
-            } 
+           
             
             .SecondarySplitDropdownMenuButton-rightButton.Thirdnav--medium { 
                 padding: 0 4px;
@@ -1704,12 +565,7 @@
                 border-radius: 0 6px 6px 0;
             } 
             
-            .SecondarySplitDropdownMenuButton-rightButton.Thirdnav--isEnabled:hover { 
-                background: var(--color-button-background-secondary-hover); 
-                border-color: var(--color-button-border-secondary-hover); 
-                color: var(--color-text); 
-                fill: var(--color-button-icon-secondary-hover);
-            } 
+           
             
             a { 
                 color:  var(--color-text); 
@@ -1757,150 +613,6 @@
 
 
 
-            /* //timeline */
-
-            body { 
-                /* CSS Variables that may have been missed get put on body */ 
-                    --color-text:  #f5f4f3;  
-                    --color-text-weak:  #a2a0a2;  
-                    --color-icon:  #a2a0a2;  
-                    --color-border:  #424244;  
-                    --color-border-strong:  #565557;  
-                    --color-background-weak:  #1e1f21;  
-                    --color-background-medium:  #252628;  
-                    --color-text:  #f5f4f3;  
-                    --color-text-weak:  #a2a0a2;  
-                    --color-icon:  #a2a0a2;  
-                    --color-border:  #424244;  
-                    --color-border-strong:  #565557;  
-                    --color-background-weak:  #1e1f21;  
-                    --color-background-medium:  #252628;  
-                    --color-text:   #f5f4f3;  
-                    --color-text-weak:   #a2a0a2;  
-                    --color-icon:   #a2a0a2;  
-                    --color-border:   #424244;  
-                    --color-border-strong:   #565557;  
-                    --color-background-weak:   #1e1f21;  
-                    --color-background-medium:   #252628;  
-                    --color-navigation-body-background:  #252628;  
-                    --color-text:    #f5f4f3;  
-                    --color-text-weak:    #a2a0a2;  
-                    --color-icon:    #a2a0a2;  
-                    --color-border:    #424244;  
-                    --color-border-strong:    #565557;  
-                    --color-background-weak:    #1e1f21;  
-                    --color-background-medium:    #252628;  
-                    --color-navigation-body-background:  #252628;  
-                    --color-button-background-subtle:  transparent;  
-                    --color-text:     #f5f4f3;  
-                    --color-text-weak:     #a2a0a2;  
-                    --color-icon:     #a2a0a2;  
-                    --color-border:     #424244;  
-                    --color-border-strong:     #565557;  
-                    --color-background-weak:     #1e1f21;  
-                    --color-background-medium:     #252628;  
-                    --color-navigation-body-background:   #252628;  
-                    --color-button-background-subtle:  transparent;  
-                    --color-text:      #f5f4f3;  
-                    --color-text-weak:      #a2a0a2;  
-                    --color-icon:      #a2a0a2;  
-                    --color-border:      #424244;  
-                    --color-border-strong:      #565557;  
-                    --color-background-weak:      #1e1f21;  
-                    --color-background-medium:      #252628;  
-                    --color-navigation-body-background:    #252628;  
-                    --color-button-background-subtle:   transparent;  
-                    --color-text:       #f5f4f3;  
-                    --color-text-weak:       #a2a0a2;  
-                    --color-icon:       #a2a0a2;  
-                    --color-border:       #424244;  
-                    --color-border-strong:       #565557;  
-                    --color-background-weak:       #1e1f21;  
-                    --color-background-medium:       #252628;  
-                    --color-navigation-body-background:     #252628;  
-                    --color-button-background-subtle:    transparent;  
-                    --color-box-shadow-bottom-small:  0 1px #424244;  
-                    --color-text:        #f5f4f3;  
-                    --color-text-weak:        #a2a0a2;  
-                    --color-icon:        #a2a0a2;  
-                    --color-border:        #424244;  
-                    --color-border-strong:        #565557;  
-                    --color-background-weak:        #1e1f21;  
-                    --color-background-medium:        #252628;  
-                    --color-navigation-body-background:      #252628;  
-                    --color-button-background-subtle:     transparent;  
-                    --color-box-shadow-bottom-small:  0 1px #424244;  
-                    --color-text:         #f5f4f3;  
-                    --color-text-weak:         #a2a0a2;  
-                    --color-icon:         #a2a0a2;  
-                    --color-border:         #424244;  
-                    --color-border-strong:         #565557;  
-                    --color-background-weak:         #1e1f21;  
-                    --color-background-medium:         #252628;  
-                    --color-navigation-body-background:       #252628;  
-                    --color-button-background-subtle:      transparent;  
-                    --color-box-shadow-bottom-small:   0 1px #424244;  
-                    --color-text:          #f5f4f3;  
-                    --color-text-weak:          #a2a0a2;  
-                    --color-icon:          #a2a0a2;  
-                    --color-border:          #424244;  
-                    --color-border-strong:          #565557;  
-                    --color-background-weak:          #1e1f21;  
-                    --color-background-medium:          #252628;  
-                    --color-navigation-body-background:        #252628;  
-                    --color-button-background-subtle:       transparent;  
-                    --color-box-shadow-bottom-small:    0 1px #424244;  
-                    --color-text:           #f5f4f3;  
-                    --color-text-weak:           #a2a0a2;  
-                    --color-icon:           #a2a0a2;  
-                    --color-border:           #424244;  
-                    --color-border-strong:           #565557;  
-                    --color-background-weak:           #1e1f21;  
-                    --color-background-medium:           #252628;  
-                    --color-navigation-body-background:         #252628;  
-                    --color-button-background-subtle:        transparent;  
-                    --color-box-shadow-bottom-small:     0 1px #424244;  
-                    --color-text:            #f5f4f3;  
-                    --color-text-weak:            #a2a0a2;  
-                    --color-icon:            #a2a0a2;  
-                    --color-border:            #424244;  
-                    --color-border-strong:            #565557;  
-                    --color-background-weak:            #1e1f21;  
-                    --color-background-medium:            #252628;  
-                    --color-navigation-body-background:          #252628;  
-                    --color-button-background-subtle:         transparent;  
-                    --color-box-shadow-bottom-small:      0 1px #424244;  
-                    --color-text:             #f5f4f3;  
-                    --color-text-weak:             #a2a0a2;  
-                    --color-icon:             #a2a0a2;  
-                    --color-border:             #424244;  
-                    --color-border-strong:             #565557;  
-                    --color-background-weak:             #1e1f21;  
-                    --color-background-medium:             #252628;  
-                    --color-navigation-body-background:           #252628;  
-                    --color-button-background-subtle:          transparent;  
-                    --color-box-shadow-bottom-small:       0 1px #424244;  
-                    --color-text:              #f5f4f3;  
-                    --color-text-weak:              #a2a0a2;  
-                    --color-icon:              #a2a0a2;  
-                    --color-border:              #424244;  
-                    --color-border-strong:              #565557;  
-                    --color-background-weak:              #1e1f21;  
-                    --color-background-medium:              #252628;  
-                    --color-navigation-body-background:            #252628;  
-                    --color-button-background-subtle:           transparent;  
-                    --color-box-shadow-bottom-small:        0 1px #424244;  
-                    --color-text:               #f5f4f3;  
-                    --color-text-weak:               #a2a0a2;  
-                    --color-icon:               #a2a0a2;  
-                    --color-border:               #424244;  
-                    --color-border-strong:               #565557;  
-                    --color-background-weak:               #1e1f21;  
-                    --color-background-medium:               #252628;  
-                    --color-navigation-body-background:             #252628;  
-                    --color-button-background-subtle:            transparent;  
-                    --color-box-shadow-bottom-small:         0 1px #424244;  
-                } 
                 
                 .TabNavigationBarWithOverflow { 
                     min-width: 1px; 
@@ -1912,7 +624,7 @@
                     flex: 1;
                 } 
                 
-                .TopbarPageHeaderStructureWithBreadcrumbs-navMenuRow { 
+                .Topbar-navMenuRow { 
                     align-items: flex-end; 
                     align-self: stretch; 
                     display: flex; 
@@ -1921,18 +633,18 @@
                     max-width: 100%;
                 } 
                 
-                .TopbarPageHeaderStructureWithBreadcrumbs-leftChildrenWrapper { 
+                .Topbar-leftChildrenWrapper { 
                     flex: 1 1 auto; 
                     min-width: 1px;
                 } 
                 
-                .TopbarPageHeaderStructureWithBreadcrumbs { 
+                .Topbar { 
                     display: flex; 
                     flex: 1 1 auto; 
                     min-width: 1px;
                 } 
                 
-                .TopbarPageHeaderStructureWithBreadcrumbs--withNavMenu { 
+                .Topbar--withNavMenu { 
                     height: 98.8px;
                 } 
                 
@@ -2001,63 +713,6 @@
                     top: 0;
                 } 
                 
-                body { 
-                    border:     0; 
-                    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-                    font-size:  14px; 
-                    margin:   0;
-                    padding:     0; 
-                    vertical-align:     baseline;
-                    line-height:  normal;
-                    background-color:   var(--color-navigation-body-background); 
-                    box-sizing:   border-box; 
-                    color:   var(--color-text); 
-                    fill:   var(--color-icon); 
-                    overflow:   hidden;
-                } 
-                
-                @media (prefers-color-scheme: dark){ 
-                  .DesignTokenThemeSelectors-theme--systemDarkMode { 
-                    color-scheme: dark;
-                  } 
-                
-                  :root .DesignTokenThemeSelectors-theme--systemDarkMode { 
-                    --color-text:              #f5f4f3; 
-                    --color-text-weak:              #a2a0a2; 
-                    --color-icon:              #a2a0a2; 
-                    --color-border:              #424244; 
-                    --color-border-strong:              #565557; 
-                    --color-background-weak:              #1e1f21; 
-                    --color-background-medium:              #252628; 
-                    --color-navigation-body-background:            #252628; 
-                    --color-button-background-subtle:           transparent; 
-                    --color-box-shadow-bottom-small:        0 1px #424244; 
-                  } 
-                }     
-                
-                html { 
-                    border:   0; 
-                    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-                    font-size:  14px; 
-                    margin:   0; 
-                    padding:   0; 
-                    vertical-align:   baseline;
-                    height:  100%;
-                    line-height: normal;
-                } 
-                
-                :root { 
-                    --color-text:               #1e1f21; 
-                    --color-text-weak:               #6d6e6f; 
-                    --color-icon:               #6d6e6f; 
-                    --color-border:               #edeae9; 
-                    --color-border-strong:               #cfcbcb; 
-                    --color-background-weak:               #fff; 
-                    --color-background-medium:               #f9f8f8; 
-                    --color-navigation-body-background:             #f9f8f8; 
-                    --color-button-background-subtle:            transparent; 
-                    --color-box-shadow-bottom-small:         0 1px 4px 0 rgba(109, 110, 111, 0.08); 
-                } 
                 
                 nav { 
                     display: block;
@@ -2218,7 +873,7 @@
                 } 
                 
                 .TimelineHeader-viewStateButtons .TimelineHeader-viewStateButtons > *  { 
-                    margin-right: 8px;
+                    margin-right: 18px;
                 } 
                 
                 .Thirdnav.Thirdnav--isEnabled { 
@@ -2320,176 +975,6 @@
             
     /* todo */
 
-
-    body { 
-        /* CSS Variables that may have been missed get put on body */ 
-            --color-text:  #f5f4f3;  
-            --color-text-weak:  #a2a0a2;  
-            --color-text-weak-hover:  #f5f4f3;  
-            --color-icon:  #a2a0a2;  
-            --color-border:  #424244;  
-            --color-border-strong:  #565557;  
-            --color-background-weak:  #1e1f21;  
-            --color-background-hover:  rgba(255, 255, 255, 0.06);  
-            --color-text:  #f5f4f3;  
-            --color-text-weak:  #a2a0a2;  
-            --color-text-weak-hover:  #f5f4f3;  
-            --color-icon:  #a2a0a2;  
-            --color-border:  #424244;  
-            --color-border-strong:  #565557;  
-            --color-background-weak:  #1e1f21;  
-            --color-background-hover:  rgba(255, 255, 255, 0.06);  
-            --color-text:   #f5f4f3;  
-            --color-text-weak:   #a2a0a2;  
-            --color-text-weak-hover:   #f5f4f3;  
-            --color-icon:   #a2a0a2;  
-            --color-border:   #424244;  
-            --color-border-strong:   #565557;  
-            --color-background-weak:   #1e1f21;  
-            --color-background-hover:   rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:  #252628;  
-            --color-text:    #f5f4f3;  
-            --color-text-weak:    #a2a0a2;  
-            --color-text-weak-hover:    #f5f4f3;  
-            --color-icon:    #a2a0a2;  
-            --color-border:    #424244;  
-            --color-border-strong:    #565557;  
-            --color-background-weak:    #1e1f21;  
-            --color-background-hover:    rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:  #252628;  
-            --color-button-border-subtle:  transparent;  
-            --color-button-background-subtle:  transparent;  
-            --color-text:     #f5f4f3;  
-            --color-text-weak:     #a2a0a2;  
-            --color-text-weak-hover:     #f5f4f3;  
-            --color-icon:     #a2a0a2;  
-            --color-border:     #424244;  
-            --color-border-strong:     #565557;  
-            --color-background-weak:     #1e1f21;  
-            --color-background-hover:     rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:   #252628;  
-            --color-button-border-subtle:  transparent;  
-            --color-button-background-subtle:  transparent;  
-            --color-text:      #f5f4f3;  
-            --color-text-weak:      #a2a0a2;  
-            --color-text-weak-hover:      #f5f4f3;  
-            --color-icon:      #a2a0a2;  
-            --color-border:      #424244;  
-            --color-border-strong:      #565557;  
-            --color-background-weak:      #1e1f21;  
-            --color-background-hover:      rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:    #252628;  
-            --color-button-border-subtle:   transparent;  
-            --color-button-background-subtle:   transparent;  
-            --color-text:       #f5f4f3;  
-            --color-text-weak:       #a2a0a2;  
-            --color-text-weak-hover:       #f5f4f3;  
-            --color-icon:       #a2a0a2;  
-            --color-border:       #424244;  
-            --color-border-strong:       #565557;  
-            --color-background-weak:       #1e1f21;  
-            --color-background-hover:       rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:     #252628;  
-            --color-button-border-subtle:    transparent;  
-            --color-button-background-subtle:    transparent;  
-            --color-box-shadow-bottom-small:  0 1px #424244;  
-            --color-text:        #f5f4f3;  
-            --color-text-weak:        #a2a0a2;  
-            --color-text-weak-hover:        #f5f4f3;  
-            --color-icon:        #a2a0a2;  
-            --color-border:        #424244;  
-            --color-border-strong:        #565557;  
-            --color-background-weak:        #1e1f21;  
-            --color-background-hover:        rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:      #252628;  
-            --color-button-border-subtle:     transparent;  
-            --color-button-background-subtle:     transparent;  
-            --color-box-shadow-bottom-small:  0 1px #424244;  
-            --color-text:         #f5f4f3;  
-            --color-text-weak:         #a2a0a2;  
-            --color-text-weak-hover:         #f5f4f3;  
-            --color-icon:         #a2a0a2;  
-            --color-border:         #424244;  
-            --color-border-strong:         #565557;  
-            --color-background-weak:         #1e1f21;  
-            --color-background-hover:         rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:       #252628;  
-            --color-button-border-subtle:      transparent;  
-            --color-button-background-subtle:      transparent;  
-            --color-box-shadow-bottom-small:   0 1px #424244;  
-            --color-text:          #f5f4f3;  
-            --color-text-weak:          #a2a0a2;  
-            --color-text-weak-hover:          #f5f4f3;  
-            --color-icon:          #a2a0a2;  
-            --color-border:          #424244;  
-            --color-border-strong:          #565557;  
-            --color-background-weak:          #1e1f21;  
-            --color-background-hover:          rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:        #252628;  
-            --color-button-border-subtle:       transparent;  
-            --color-button-background-subtle:       transparent;  
-            --color-box-shadow-bottom-small:    0 1px #424244;  
-            --color-text:           #f5f4f3;  
-            --color-text-weak:           #a2a0a2;  
-            --color-text-weak-hover:           #f5f4f3;  
-            --color-icon:           #a2a0a2;  
-            --color-border:           #424244;  
-            --color-border-strong:           #565557;  
-            --color-background-weak:           #1e1f21;  
-            --color-background-hover:           rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:         #252628;  
-            --color-button-border-subtle:        transparent;  
-            --color-button-background-subtle:        transparent;  
-            --color-box-shadow-bottom-small:     0 1px #424244;  
-            --color-text:            #f5f4f3;  
-            --color-text-weak:            #a2a0a2;  
-            --color-text-weak-hover:            #f5f4f3;  
-            --color-icon:            #a2a0a2;  
-            --color-border:            #424244;  
-            --color-border-strong:            #565557;  
-            --color-background-weak:            #1e1f21;  
-            --color-background-hover:            rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:          #252628;  
-            --color-button-border-subtle:         transparent;  
-            --color-button-background-subtle:         transparent;  
-            --color-box-shadow-bottom-small:      0 1px #424244;  
-            --color-text:             #f5f4f3;  
-            --color-text-weak:             #a2a0a2;  
-            --color-text-weak-hover:             #f5f4f3;  
-            --color-icon:             #a2a0a2;  
-            --color-border:             #424244;  
-            --color-border-strong:             #565557;  
-            --color-background-weak:             #1e1f21;  
-            --color-background-hover:             rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:           #252628;  
-            --color-button-border-subtle:          transparent;  
-            --color-button-background-subtle:          transparent;  
-            --color-box-shadow-bottom-small:       0 1px #424244;  
-            --color-text:              #f5f4f3;  
-            --color-text-weak:              #a2a0a2;  
-            --color-text-weak-hover:              #f5f4f3;  
-            --color-icon:              #a2a0a2;  
-            --color-border:              #424244;  
-            --color-border-strong:              #565557;  
-            --color-background-weak:              #1e1f21;  
-            --color-background-hover:              rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:            #252628;  
-            --color-button-border-subtle:           transparent;  
-            --color-button-background-subtle:           transparent;  
-            --color-box-shadow-bottom-small:        0 1px #424244;  
-            --color-text:               #f5f4f3;  
-            --color-text-weak:               #a2a0a2;  
-            --color-text-weak-hover:               #f5f4f3;  
-            --color-icon:               #a2a0a2;  
-            --color-border:               #424244;  
-            --color-border-strong:               #565557;  
-            --color-background-weak:               #1e1f21;  
-            --color-background-hover:               rgba(255, 255, 255, 0.06);  
-            --color-navigation-body-background:             #252628;  
-            --color-button-border-subtle:            transparent;  
-            --color-button-background-subtle:            transparent;  
-            --color-box-shadow-bottom-small:         0 1px #424244;  
-        } 
         
         .TabNavigationBarWithOverflow { 
             min-width: 1px; 
@@ -2501,7 +986,7 @@
             flex: 1;
         } 
         
-        .TopbarPageHeaderStructureWithBreadcrumbs-navMenuRow { 
+        .Topbar-navMenuRow { 
             align-items: flex-end; 
             align-self: stretch; 
             display: flex; 
@@ -2510,18 +995,18 @@
             max-width: 100%;
         } 
         
-        .TopbarPageHeaderStructureWithBreadcrumbs-leftChildrenWrapper { 
+        .Topbar-leftChildrenWrapper { 
             flex: 1 1 auto; 
             min-width: 1px;
         } 
         
-        .TopbarPageHeaderStructureWithBreadcrumbs { 
+        .Topbar { 
             display: flex; 
             flex: 1 1 auto; 
             min-width: 1px;
         } 
         
-        .TopbarPageHeaderStructureWithBreadcrumbs--withNavMenu { 
+        .Topbar--withNavMenu { 
             height: 98.8px;
         } 
         
@@ -2676,7 +1161,7 @@
             display: flex;
         } 
         
-        .TaskTimelineGroupSidebar { 
+        .sidebar { 
             background: var(--color-background-weak); 
             box-sizing: border-box; 
             height: 100%; 
@@ -2826,7 +1311,7 @@
             user-select: none;
         } 
         
-        .TaskTimelineGroupSidebar-addSectionButton { 
+        .sidebar-addSectionButton { 
             margin-left: 24px;
         } 
         
@@ -2946,7 +1431,7 @@
             display: flex;
         } 
         
-        .TaskTimelineGroupSidebar .SortableList-sortableItemContainer:first-child .TaskTimelineGroupSidebar-group  { 
+        .sidebar .SortableList-sortableItemContainer:first-child .sidebar-group  { 
             border-top: none;
         } 
         
@@ -2991,7 +1476,7 @@
             visibility: hidden;
         } 
         
-        .ThemeableIconButtonPresentation { 
+        .btn { 
             align-items: center; 
             border: 1px solid; 
             border-radius: 50%; 
@@ -3006,28 +1491,28 @@
             margin-right: 4px;
         } 
         
-        .ThemeableIconButtonPresentation.ThemeableIconButtonPresentation--isEnabled { 
+        .btn.btn--isEnabled { 
             cursor: pointer;
         } 
         
-        .SubtleIconButton.ThemeableIconButtonPresentation { 
+        .SubtleIconButton.btn { 
             border-radius: 6px;
         } 
         
-        .ThemeableIconButtonPresentation.ThemeableIconButtonPresentation--medium.ThemeableIconButtonPresentation { 
+        .btn.btn--medium.btn { 
             height: 28px; 
             min-height: 28px; 
             min-width: 28px; 
             width: 28px;
         } 
         
-        .SubtleIconButton.SubtleIconButton--standardTheme.ThemeableIconButtonPresentation { 
+        .SubtleIconButton.SubtleIconButton--standardTheme.btn { 
             background: var(--color-button-background-subtle); 
             border-color: var(--color-button-background-subtle); 
             fill: var(--color-text-weak);
         } 
         
-        .SubtleIconButton.SubtleIconButton--standardTheme.ThemeableIconButtonPresentation--isEnabled:hover { 
+        .SubtleIconButton.SubtleIconButton--standardTheme.btn--isEnabled:hover { 
             background: var(--color-background-hover); 
             border-color: var(--color-button-border-subtle); 
             fill: var(--color-text-weak-hover);
@@ -3044,11 +1529,11 @@
             visibility: visible;
         } 
         
-        .SubtleIconButton.SubtleIconButton--standardTheme.ThemeableIconButtonPresentation:focus { 
+        .SubtleIconButton.SubtleIconButton--standardTheme.btn:focus { 
             outline: none;
         } 
         
-        .SubtleIconButton.SubtleIconButton--standardTheme.ThemeableIconButtonPresentation:focus:not(:focus-visible) { 
+        .SubtleIconButton.SubtleIconButton--standardTheme.btn:focus:not(:focus-visible) { 
             box-shadow: none;
         } 
         
@@ -3097,444 +1582,18 @@
 
         /* share customize button */
 
-        body { 
-            /* CSS Variables that may have been missed get put on body */ 
-                --color-customization-background-deprecated-opaque:  #c7c4c4;  
-                --color-customization-foreground:  #1e1f21;  
-                --color-customization-indigo-background:  #8d84e8;  
-                --color-customization-indigo-foreground:  #fff;  
-                --color-text:  #f5f4f3;  
-                --color-icon:  #a2a0a2;  
-                --color-border:  #424244;  
-                --color-background-weak:  #1e1f21;  
-                --color-primary-text-strong:  #fff;  
-                --color-primary-icon-strong:  #fff;  
-                --color-primary-background-strong:  #4573d2;  
-                --color-primary-background-strong-hover:  #426dc6;  
-                --color-customization-background-deprecated-opaque:   #c7c4c4;  
-                --color-customization-foreground:   #1e1f21;  
-                --color-customization-indigo-background:   #8d84e8;  
-                --color-customization-indigo-foreground:   #fff;  
-                --color-text:  #f5f4f3;  
-                --color-icon:  #a2a0a2;  
-                --color-border:  #424244;  
-                --color-background-weak:  #1e1f21;  
-                --color-primary-text-strong:  #fff;  
-                --color-primary-icon-strong:  #fff;  
-                --color-primary-background-strong:  #4573d2;  
-                --color-primary-background-strong-hover:  #426dc6;  
-                --color-deprecated-lightGray3:  #a2a0a2;  
-                --color-customization-background-deprecated-opaque:    #c7c4c4;  
-                --color-customization-foreground:    #1e1f21;  
-                --color-customization-indigo-background:    #8d84e8;  
-                --color-customization-indigo-foreground:    #fff;  
-                --color-text:   #f5f4f3;  
-                --color-icon:   #a2a0a2;  
-                --color-border:   #424244;  
-                --color-background-weak:   #1e1f21;  
-                --color-primary-text-strong:   #fff;  
-                --color-primary-icon-strong:   #fff;  
-                --color-primary-background-strong:   #4573d2;  
-                --color-primary-background-strong-hover:   #426dc6;  
-                --color-deprecated-lightGray3:  #a2a0a2;  
-                --color-navigation-body-background:  #252628;  
-                --color-customization-background-deprecated-opaque:     #c7c4c4;  
-                --color-customization-foreground:     #1e1f21;  
-                --color-customization-indigo-background:     #8d84e8;  
-                --color-customization-indigo-foreground:     #fff;  
-                --color-text:    #f5f4f3;  
-                --color-icon:    #a2a0a2;  
-                --color-border:    #424244;  
-                --color-background-weak:    #1e1f21;  
-                --color-primary-text-strong:    #fff;  
-                --color-primary-icon-strong:    #fff;  
-                --color-primary-background-strong:    #4573d2;  
-                --color-primary-background-strong-hover:    #426dc6;  
-                --color-deprecated-lightGray3:   #a2a0a2;  
-                --color-navigation-body-background:  #252628;  
-                --color-button-icon-secondary-hover:  #f5f4f3;  
-                --color-button-border-secondary:  #565557;  
-                --color-button-border-secondary-hover:  #6a696a;  
-                --color-button-background-secondary:  transparent;  
-                --color-button-background-secondary-hover:  rgba(255, 255, 255, 0.06);  
-                --color-customization-background-deprecated-opaque:      #c7c4c4;  
-                --color-customization-foreground:      #1e1f21;  
-                --color-customization-indigo-background:      #8d84e8;  
-                --color-customization-indigo-foreground:      #fff;  
-                --color-text:     #f5f4f3;  
-                --color-icon:     #a2a0a2;  
-                --color-border:     #424244;  
-                --color-background-weak:     #1e1f21;  
-                --color-primary-text-strong:     #fff;  
-                --color-primary-icon-strong:     #fff;  
-                --color-primary-background-strong:     #4573d2;  
-                --color-primary-background-strong-hover:     #426dc6;  
-                --color-deprecated-lightGray3:    #a2a0a2;  
-                --color-navigation-body-background:   #252628;  
-                --color-button-icon-secondary-hover:  #f5f4f3;  
-                --color-button-border-secondary:  #565557;  
-                --color-button-border-secondary-hover:  #6a696a;  
-                --color-button-background-secondary:  transparent;  
-                --color-button-background-secondary-hover:  rgba(255, 255, 255, 0.06);  
-                --color-customization-background-deprecated-opaque:       #c7c4c4;  
-                --color-customization-foreground:       #1e1f21;  
-                --color-customization-indigo-background:       #8d84e8;  
-                --color-customization-indigo-foreground:       #fff;  
-                --color-text:      #f5f4f3;  
-                --color-icon:      #a2a0a2;  
-                --color-border:      #424244;  
-                --color-background-weak:      #1e1f21;  
-                --color-primary-text-strong:      #fff;  
-                --color-primary-icon-strong:      #fff;  
-                --color-primary-background-strong:      #4573d2;  
-                --color-primary-background-strong-hover:      #426dc6;  
-                --color-deprecated-lightGray3:     #a2a0a2;  
-                --color-navigation-body-background:    #252628;  
-                --color-button-icon-secondary-hover:   #f5f4f3;  
-                --color-button-border-secondary:   #565557;  
-                --color-button-border-secondary-hover:   #6a696a;  
-                --color-button-background-secondary:   transparent;  
-                --color-button-background-secondary-hover:   rgba(255, 255, 255, 0.06);  
-                --color-customization-background-deprecated-opaque:        #c7c4c4;  
-                --color-customization-foreground:        #1e1f21;  
-                --color-customization-indigo-background:        #8d84e8;  
-                --color-customization-indigo-foreground:        #fff;  
-                --color-text:       #f5f4f3;  
-                --color-icon:       #a2a0a2;  
-                --color-border:       #424244;  
-                --color-background-weak:       #1e1f21;  
-                --color-primary-text-strong:       #fff;  
-                --color-primary-icon-strong:       #fff;  
-                --color-primary-background-strong:       #4573d2;  
-                --color-primary-background-strong-hover:       #426dc6;  
-                --color-deprecated-lightGray3:      #a2a0a2;  
-                --color-navigation-body-background:     #252628;  
-                --color-button-icon-secondary-hover:    #f5f4f3;  
-                --color-button-border-secondary:    #565557;  
-                --color-button-border-secondary-hover:    #6a696a;  
-                --color-button-background-secondary:    transparent;  
-                --color-button-background-secondary-hover:    rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:  0 1px #424244;  
-                --color-customization-background-deprecated-opaque:         #c7c4c4;  
-                --color-customization-foreground:         #1e1f21;  
-                --color-customization-indigo-background:         #8d84e8;  
-                --color-customization-indigo-foreground:         #fff;  
-                --color-text:        #f5f4f3;  
-                --color-icon:        #a2a0a2;  
-                --color-border:        #424244;  
-                --color-background-weak:        #1e1f21;  
-                --color-primary-text-strong:        #fff;  
-                --color-primary-icon-strong:        #fff;  
-                --color-primary-background-strong:        #4573d2;  
-                --color-primary-background-strong-hover:        #426dc6;  
-                --color-deprecated-lightGray3:       #a2a0a2;  
-                --color-navigation-body-background:      #252628;  
-                --color-button-icon-secondary-hover:     #f5f4f3;  
-                --color-button-border-secondary:     #565557;  
-                --color-button-border-secondary-hover:     #6a696a;  
-                --color-button-background-secondary:     transparent;  
-                --color-button-background-secondary-hover:     rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:  0 1px #424244;  
-                --color-customization-background-deprecated-opaque:          #c7c4c4;  
-                --color-customization-foreground:          #1e1f21;  
-                --color-customization-indigo-background:          #8d84e8;  
-                --color-customization-indigo-foreground:          #fff;  
-                --color-text:         #f5f4f3;  
-                --color-icon:         #a2a0a2;  
-                --color-border:         #424244;  
-                --color-background-weak:         #1e1f21;  
-                --color-primary-text-strong:         #fff;  
-                --color-primary-icon-strong:         #fff;  
-                --color-primary-background-strong:         #4573d2;  
-                --color-primary-background-strong-hover:         #426dc6;  
-                --color-deprecated-lightGray3:        #a2a0a2;  
-                --color-navigation-body-background:       #252628;  
-                --color-button-icon-secondary-hover:      #f5f4f3;  
-                --color-button-border-secondary:      #565557;  
-                --color-button-border-secondary-hover:      #6a696a;  
-                --color-button-background-secondary:      transparent;  
-                --color-button-background-secondary-hover:      rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:   0 1px #424244;  
-                --color-customization-background-deprecated-opaque:           #c7c4c4;  
-                --color-customization-foreground:           #1e1f21;  
-                --color-customization-indigo-background:           #8d84e8;  
-                --color-customization-indigo-foreground:           #fff;  
-                --color-text:          #f5f4f3;  
-                --color-icon:          #a2a0a2;  
-                --color-border:          #424244;  
-                --color-background-weak:          #1e1f21;  
-                --color-primary-text-strong:          #fff;  
-                --color-primary-icon-strong:          #fff;  
-                --color-primary-background-strong:          #4573d2;  
-                --color-primary-background-strong-hover:          #426dc6;  
-                --color-deprecated-lightGray3:         #a2a0a2;  
-                --color-navigation-body-background:        #252628;  
-                --color-button-icon-secondary-hover:       #f5f4f3;  
-                --color-button-border-secondary:       #565557;  
-                --color-button-border-secondary-hover:       #6a696a;  
-                --color-button-background-secondary:       transparent;  
-                --color-button-background-secondary-hover:       rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:    0 1px #424244;  
-                --color-customization-background-deprecated-opaque:            #c7c4c4;  
-                --color-customization-foreground:            #1e1f21;  
-                --color-customization-indigo-background:            #8d84e8;  
-                --color-customization-indigo-foreground:            #fff;  
-                --color-text:           #f5f4f3;  
-                --color-icon:           #a2a0a2;  
-                --color-border:           #424244;  
-                --color-background-weak:           #1e1f21;  
-                --color-primary-text-strong:           #fff;  
-                --color-primary-icon-strong:           #fff;  
-                --color-primary-background-strong:           #4573d2;  
-                --color-primary-background-strong-hover:           #426dc6;  
-                --color-deprecated-lightGray3:          #a2a0a2;  
-                --color-navigation-body-background:         #252628;  
-                --color-button-icon-secondary-hover:        #f5f4f3;  
-                --color-button-border-secondary:        #565557;  
-                --color-button-border-secondary-hover:        #6a696a;  
-                --color-button-background-secondary:        transparent;  
-                --color-button-background-secondary-hover:        rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:     0 1px #424244;  
-                --color-customization-background-deprecated-opaque:             #c7c4c4;  
-                --color-customization-foreground:             #1e1f21;  
-                --color-customization-indigo-background:             #8d84e8;  
-                --color-customization-indigo-foreground:             #fff;  
-                --color-text:            #f5f4f3;  
-                --color-icon:            #a2a0a2;  
-                --color-border:            #424244;  
-                --color-background-weak:            #1e1f21;  
-                --color-primary-text-strong:            #fff;  
-                --color-primary-icon-strong:            #fff;  
-                --color-primary-background-strong:            #4573d2;  
-                --color-primary-background-strong-hover:            #426dc6;  
-                --color-deprecated-lightGray3:           #a2a0a2;  
-                --color-navigation-body-background:          #252628;  
-                --color-button-icon-secondary-hover:         #f5f4f3;  
-                --color-button-border-secondary:         #565557;  
-                --color-button-border-secondary-hover:         #6a696a;  
-                --color-button-background-secondary:         transparent;  
-                --color-button-background-secondary-hover:         rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:      0 1px #424244;  
-                --color-customization-background-deprecated-opaque:              #c7c4c4;  
-                --color-customization-foreground:              #1e1f21;  
-                --color-customization-indigo-background:              #8d84e8;  
-                --color-customization-indigo-foreground:              #fff;  
-                --color-text:             #f5f4f3;  
-                --color-icon:             #a2a0a2;  
-                --color-border:             #424244;  
-                --color-background-weak:             #1e1f21;  
-                --color-primary-text-strong:             #fff;  
-                --color-primary-icon-strong:             #fff;  
-                --color-primary-background-strong:             #4573d2;  
-                --color-primary-background-strong-hover:             #426dc6;  
-                --color-deprecated-lightGray3:            #a2a0a2;  
-                --color-navigation-body-background:           #252628;  
-                --color-button-icon-secondary-hover:          #f5f4f3;  
-                --color-button-border-secondary:          #565557;  
-                --color-button-border-secondary-hover:          #6a696a;  
-                --color-button-background-secondary:          transparent;  
-                --color-button-background-secondary-hover:          rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:       0 1px #424244;  
-                --color-customization-background-deprecated-opaque:               #c7c4c4;  
-                --color-customization-foreground:               #1e1f21;  
-                --color-customization-indigo-background:               #8d84e8;  
-                --color-customization-indigo-foreground:               #fff;  
-                --color-text:              #f5f4f3;  
-                --color-icon:              #a2a0a2;  
-                --color-border:              #424244;  
-                --color-background-weak:              #1e1f21;  
-                --color-primary-text-strong:              #fff;  
-                --color-primary-icon-strong:              #fff;  
-                --color-primary-background-strong:              #4573d2;  
-                --color-primary-background-strong-hover:              #426dc6;  
-                --color-deprecated-lightGray3:             #a2a0a2;  
-                --color-navigation-body-background:            #252628;  
-                --color-button-icon-secondary-hover:           #f5f4f3;  
-                --color-button-border-secondary:           #565557;  
-                --color-button-border-secondary-hover:           #6a696a;  
-                --color-button-background-secondary:           transparent;  
-                --color-button-background-secondary-hover:           rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:        0 1px #424244;  
-                --color-customization-background-deprecated-opaque:                #c7c4c4;  
-                --color-customization-foreground:                #1e1f21;  
-                --color-customization-indigo-background:                #8d84e8;  
-                --color-customization-indigo-foreground:                #fff;  
-                --color-text:               #f5f4f3;  
-                --color-icon:               #a2a0a2;  
-                --color-border:               #424244;  
-                --color-background-weak:               #1e1f21;  
-                --color-primary-text-strong:               #fff;  
-                --color-primary-icon-strong:               #fff;  
-                --color-primary-background-strong:               #4573d2;  
-                --color-primary-background-strong-hover:               #426dc6;  
-                --color-deprecated-lightGray3:              #a2a0a2;  
-                --color-navigation-body-background:             #252628;  
-                --color-button-icon-secondary-hover:            #f5f4f3;  
-                --color-button-border-secondary:            #565557;  
-                --color-button-border-secondary-hover:            #6a696a;  
-                --color-button-background-secondary:            transparent;  
-                --color-button-background-secondary-hover:            rgba(255, 255, 255, 0.06);  
-                --color-box-shadow-bottom-small:         0 1px #424244;  
-            } 
-            
-            .TopbarPageHeaderStructureWithBreadcrumbs { 
-                display: flex; 
-                flex: 1 1 auto; 
-                min-width: 1px;
-            } 
-            
-            .TopbarPageHeaderStructureWithBreadcrumbs--withNavMenu { 
-                height: 98.8px;
-            } 
-            
-            .AsanaBaseTopbar-pageHeader { 
-                display: inline-flex; 
-                flex: 1 1 auto; 
-                min-width: 1px;
-            } 
-            
-            .AsanaBaseTopbar--zIndexIncluded { 
-                z-index: 200;
-            } 
-            
-            .AsanaBaseTopbar { 
-                align-items: center; 
-                background: var(--color-background-weak); 
-                box-shadow: var(--color-box-shadow-bottom-small); 
-                box-sizing: border-box; 
-                display: flex; 
-                flex-shrink: 0; 
-                min-height: 72px; 
-                padding: 0 24px; 
-                position: relative;
-            } 
-            
-            .AsanaBaseTopbar--withoutShadow { 
-                box-shadow: none;
-            } 
-            
-            main { 
-                display: block;
-            } 
-            
-            .AsanaMain-asanaPageAndTopbar { 
-                display: flex; 
-                flex: 1; 
-                flex-direction: column; 
-                min-width: 920px; 
-                position: relative;
-            } 
-            
-            .AsanaMain-mainLayer { 
-                display: flex; 
-                flex: 1 1 0; 
-                min-height: 1px;
-            } 
-            
-            .AsanaMain { 
-                display: flex; 
-                flex: 1 1 auto; 
-                flex-direction: column;
-            } 
-            
-            .AppRoot-fullPage { 
-                bottom: 0; 
-                display: flex; 
-                flex-direction: column; 
-                left: 0; 
-                overflow: hidden; 
-                position: absolute; 
-                right: 0; 
-                top: 0;
-            } 
-            
-            body { 
-                border:     0; 
-                font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-                font-size:  14px; 
-                margin:   0;
-                padding:     0; 
-                vertical-align:     baseline;
-                line-height:  normal;
-                background-color:   var(--color-navigation-body-background); 
-                box-sizing:   border-box; 
-                color:   var(--color-text); 
-                fill:   var(--color-icon); 
-                overflow:   hidden;
-            } 
-            
-            @media (prefers-color-scheme: dark){ 
-              .DesignTokenThemeSelectors-theme--systemDarkMode { 
-                color-scheme: dark;
-              } 
-            
-              :root .DesignTokenThemeSelectors-theme--systemDarkMode { 
-                --color-customization-background-deprecated-opaque:               #c7c4c4; 
-                --color-customization-foreground:               #1e1f21; 
-                --color-customization-indigo-background:               #8d84e8; 
-                --color-customization-indigo-foreground:               #fff; 
-                --color-text:              #f5f4f3; 
-                --color-icon:              #a2a0a2; 
-                --color-border:              #424244; 
-                --color-background-weak:              #1e1f21; 
-                --color-primary-text-strong:              #fff; 
-                --color-primary-icon-strong:              #fff; 
-                --color-primary-background-strong:              #4573d2; 
-                --color-primary-background-strong-hover:              #426dc6; 
-                --color-deprecated-lightGray3:             #a2a0a2; 
-                --color-navigation-body-background:            #252628; 
-                --color-button-icon-secondary-hover:           #f5f4f3; 
-                --color-button-border-secondary:           #565557; 
-                --color-button-border-secondary-hover:           #6a696a; 
-                --color-button-background-secondary:           transparent; 
-                --color-button-background-secondary-hover:           rgba(255, 255, 255, 0.06); 
-                --color-box-shadow-bottom-small:        0 1px #424244; 
-              } 
-            }     
-            
-            html { 
-                border:   0; 
-                font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-                font-size:  14px; 
-                margin:   0; 
-                padding:   0; 
-                vertical-align:   baseline;
-                height:  100%;
-                line-height: normal;
-            } 
-            
-            :root { 
-                --color-customization-background-deprecated-opaque:                #c7c4c4; 
-                --color-customization-foreground:                #1e1f21; 
-                --color-customization-indigo-background:                #8d84e8; 
-                --color-customization-indigo-foreground:                #fff; 
-                --color-text:               #1e1f21; 
-                --color-icon:               #6d6e6f; 
-                --color-border:               #edeae9; 
-                --color-background-weak:               #fff; 
-                --color-primary-text-strong:               #fff; 
-                --color-primary-icon-strong:               #fff; 
-                --color-primary-background-strong:               #4573d2; 
-                --color-primary-background-strong-hover:               #426dc6; 
-                --color-deprecated-lightGray3:              #cfcbcb; 
-                --color-navigation-body-background:             #f9f8f8; 
-                --color-button-icon-secondary-hover:            #1e1f21; 
-                --color-button-border-secondary:            #cfcbcb; 
-                --color-button-border-secondary-hover:            #afabac; 
-                --color-button-background-secondary:            #fff; 
-                --color-button-background-secondary-hover:            #f9f8f8; 
-                --color-box-shadow-bottom-small:         0 1px 4px 0 rgba(109, 110, 111, 0.08); 
-            } 
-            
-            .TopbarPageHeaderStructureWithBreadcrumbs-rightChildrenWrapper { 
+
+            .topnavbtn { 
                 align-items: center; 
                 display: flex; 
                 flex: 0 0 auto; 
                 margin-left: auto; 
-                padding-left: 8px;
+                padding-left: 1118px;
+            
+
             } 
             
-            .ProjectPageHeader-customizeMenuButtonContainer { 
+            .custombtn-cont { 
                 border-left: 1px solid var(--color-border); 
                 margin-left: 8px; 
                 padding-left: 8px;
@@ -3590,20 +1649,7 @@
                 padding: 0 8px;
             } 
             
-            .PrimaryButton.PrimaryButton--standardTheme.Thirdnav { 
-                background: var(--color-primary-background-strong); 
-                border-color: var(--color-primary-background-strong); 
-                color: var(--color-primary-text-strong); 
-                fill: var(--color-primary-icon-strong);
-            } 
-            
-            .PrimaryButton.PrimaryButton--standardTheme.Thirdnav--isEnabled:hover { 
-                background: var(--color-primary-background-strong-hover); 
-                border-color: var(--color-primary-background-strong-hover); 
-                color: var(--color-primary-text-strong); 
-                fill: var(--color-primary-icon-strong);
-            } 
-            
+          
             .CustomizeMenuButton-notificationIndicatorButtonContainer { 
                 position: relative;
             } 
@@ -3642,19 +1688,7 @@
                 overflow: hidden;
             } 
             
-            .SecondaryButton.SecondaryButton--standardTheme.Thirdnav { 
-                background: var(--color-button-background-secondary); 
-                border-color: var(--color-button-border-secondary); 
-                color: var(--color-text); 
-                fill: var(--color-icon);
-            } 
             
-            .SecondaryButton.SecondaryButton--standardTheme.Thirdnav--isEnabled:hover { 
-                background: var(--color-button-background-secondary-hover); 
-                border-color: var(--color-button-border-secondary-hover); 
-                color: var(--color-text); 
-                fill: var(--color-button-icon-secondary-hover);
-            } 
             
             li { 
                 border: 0; 
